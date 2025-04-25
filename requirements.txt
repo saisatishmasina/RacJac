@@ -1,0 +1,5 @@
+pyyaml
+spacy
+jinja2
+python-docx
+weasyprint

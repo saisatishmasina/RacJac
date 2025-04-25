@@ -1,0 +1,224 @@
+Position: software engineer
+
+Contact:
+  name: SAI SATISH MASINA
+  phone_number: 346-754-1988
+  email: saisatishmasina@gmail.com
+  address:
+    street: 2305 Bay Area Blvd.
+    city: Houston
+    state: TX
+    zip: 77058
+  github: https://github.com/saisatishmasina
+  linkedin: https://www.linkedin.com/in/saisatishmasina
+  website: https://saisatishmasina.github.io/PortfolioSite/
+
+
+Skills:
+  order: 1
+  categories:
+    - category: Programming Languages
+      skill:
+        - Java
+        - Python
+        - Go
+        - C++
+        - C#
+        - SQL
+        - JavaScript
+        - TypeScript
+    - category: Frontend
+      skill:
+        - React
+        - Next.js
+        - Redux
+        - HTML
+        - CSS
+    - category: Backend
+      skill:
+        - Node.js
+        - Django
+        - Spring Boot
+        - REST APIs
+        - gRPC
+        - Microservices
+    - category: Databases
+      skill:
+        - PostgreSQL
+        - MySQL
+        - MongoDB
+        - Redis
+    - category: Cloud & DevOps
+      skill:
+        - AWS (EC2, S3, Lambda)
+        - Docker
+        - Kubernetes
+        - Terraform
+        - CI/CD (Jenkins, GitHub Actions)
+    - category: AI & Data
+      skill:
+        - TensorFlow
+        - Scikit-learn
+        - LSTM
+        - ETL Pipelines
+        - Apache Airflow
+    - category: Other
+      skill:
+        - Agile (Scrum, Kanban)
+        - System Design
+        - Load Balancing
+        - Debugging
+
+Experience:
+  order: 2
+  jobs:
+    - job_title: Teaching Assistant - C# and Java Courses
+      company: University of Houston - Clear Lake
+      duration: Jan 2023 - Dec 2023
+      skills_used:
+        - Java
+        - C#
+        - Teaching
+      summary:
+        - Collaborated with students and professors to improve learning outcomes by 30%.
+        - Evaluated 200+ coding projects and enhanced algorithmic problem-solving.
+        - Conducted weekly office hours for 50+ students.
+        - Graded 500+ assignments and exams with consistent evaluation.
+        - Developed sample code and materials for Java and C#.
+    - job_title: Content Strategist
+      company: Upgrad
+      duration: Apr 2022 - Jul 2022
+      skills_used:
+        - Recommendation Systems
+        - Analytics
+        - Strategy
+      summary:
+        - Built a course recommendation system, improving engagement by 50%.
+        - Expanded the course catalog and gained recognition via university partners.
+        - Analyzed user feedback from 10,000+ users to enhance content.
+        - Collaborated with SMEs to ensure industry relevance.
+        - Improved course visibility and conversion rates by 25%.
+
+Project:
+  order: 3
+  projects:
+    - project_name: URL Shortener
+      skills_used:
+        - Python
+        - FastAPI
+        - MySQL
+        - Redis
+        - Docker
+      summary:
+        - Built a service handling 500K+ daily requests with 99.9% uptime.
+        - Optimized Redis caching to cut DB queries by 85%.
+        - Deployed microservices via Docker & Kubernetes.
+    - project_name: Air Quality Prediction using LSTM
+      skills_used:
+        - Python
+        - TensorFlow
+        - Flask
+        - Next.js
+      summary:
+        - LSTM model with 92% accuracy for real-time air quality forecasting.
+        - Dashboard reduced manual effort by 60%.
+        - Prediction latency cut by 40%.
+    - project_name: OLAP Cube Deployment
+      skills_used:
+        - Python
+        - SQL Server
+        - MDX
+      summary:
+        - Created ETL pipelines for 1M+ records/day.
+        - Enhanced OLAP query speed by 40%.
+        - Improved scalability, reducing storage needs by 25%.
+    - project_name: Full Stack E-Learning Platform
+      skills_used:
+        - Java
+        - Hibernate
+        - JavaFX
+        - HTML
+        - CSS
+        - JavaScript
+        - MySQL
+      summary:
+        - Developed a secure learning platform with role-based access control.
+        - Improved MySQL indexing and API query efficiency by 50%.
+    - project_name: Real-time Chat App
+      skills_used:
+        - Node.js
+        - WebSockets
+        - MongoDB
+        - Next.js
+      summary:
+        - Chat platform with 5K+ concurrent users and 99.8% uptime.
+        - WebSocket and DB optimization reduced latency by 30%.
+    - project_name: Stock Market Data Pipeline
+      skills_used:
+        - Python
+        - PostgreSQL
+        - Apache Airflow
+      summary:
+        - Real-time ETL for stock data of 50+ companies.
+        - Reduced data lag by 45% using optimized Airflow DAGs.
+    - project_name: Fake News Classifier
+      skills_used:
+        - Python
+        - TensorFlow
+        - NLP
+        - Flask
+        - React
+        - Next.js
+      summary:
+        - Built LSTM-powered classifier with 90%+ accuracy.
+        - Sub-second real-time classification with scalable API.
+    - project_name: DevConnect - Developer Networking Platform
+      skills_used:
+        - React.js
+        - Node.js
+        - MongoDB
+        - JWT
+        - Next.js
+      summary:
+        - Platform with 3K+ users and 20K+ interactions.
+        - JWT-based RBAC reduced unauthorized access by 98%.
+        - Optimized caching and schema for 40% faster responses.
+
+Education:
+  order: 4
+  schools:
+    - name: University of Houston - Clear Lake
+      major: Management Information Systems
+      gpa: 3.82
+      degree: Masters
+      related_courses:
+        - Advanced Database Applications Development
+        - Data Analytics Application Development
+        - Systems Analysis and Design
+        - Advanced Data Analytics in ERP System
+        - Data Warehousing and Data Mining
+        - Applications Programming with Java
+        - Applications Development with C#
+        - Computer Networking
+
+Certification:
+  order: 5
+  certs:
+    - name: Operating Systems and You - Becoming a Power User
+      link: https://www.coursera.org/verify/GQ475RQQC6KU
+    - name: System Administration and IT Infrastructure Services
+      link: https://www.coursera.org/verify/8DYT8GYGV54Q
+    - name: Technical Support Fundamentals
+      link: https://www.coursera.org/verify/D6KV38VJVK7F
+    - name: The Bits and Bytes of Computer Networking
+      link: https://www.coursera.org/verify/5N8PNMKVZV3X
+    - name: Using Python to Access Web Data
+      link: https://www.coursera.org/verify/WE3ZR9QTAZ6Q
+    - name: Python Data Structures
+      link: https://www.coursera.org/verify/3R2UG6NS68AM
+    - name: Programming for Everybody (Getting Started with Python)
+      link: https://www.coursera.org/verify/SV9VVHH373YW
+    - name: Data Analysis and Representation, Selection and Iteration
+      link: https://www.coursera.org/verify/LZHMAYMCYVVM
+    - name: Algorithms, Data Collection, and Starting to Code
+      link: https://www.coursera.org/verify/B9SNL7USUKG9

@@ -1,0 +1,78 @@
+Position: software developer
+
+# CONTACT DETAILS
+Contact:
+  name: # write your name here
+  phone_number: # likewise
+  email: # likewise
+  address:
+    street: 123 Main St
+    city: Los Angeles
+    state: CA
+    zip: 90001
+
+Education:
+  order: 4
+  schools:
+    - name: uni houston
+      major: comp sci
+      gpa: 4
+      degree: masters
+      related_courses:
+        - math
+        - pattern recognition
+        - abcd
+    - name: xyz
+      major: comp
+      gpa: 3
+      degree: undergrad
+      related_courses:
+        - course_1
+
+Project:
+  order: 3
+  projects:
+    - project_name: nin
+      skills_used:
+        - YAML
+        - JAVA
+        - PYTHON
+      summary:
+        - i have this and that
+        - i have also done this and that too
+        - and so
+
+Experience:
+  order: 2
+  jobs:
+    - job_title: abcd
+      skills_used:
+        - YAML
+        - JAVA
+        - PYTHON
+      summary:
+        - i have this and that
+        - i have also done this and that too
+        - and so
+
+Certification:
+  order: 5
+  certs:
+    - name: # name of certificate
+      link: # link to certificate
+    - name: # another one
+      link: # link to certificate
+
+Skills:
+  order: 1
+  categories:
+    - category: Programming
+      skill:
+        - Python
+        - Java
+        - C++
+    - category: Web Development
+      skill:
+        - HTML
+        - CSS
+        - JavaScript

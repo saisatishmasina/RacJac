@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>{{ resume.contact.name }} - Resume</title>
+</head>
+<body>
+
+  <div class="header">
+    <h1>{{ resume.contact.name }}</h1>
+    <p class="bold">{{ resume.position }}</p>
+    <p><a href="{{ resume.contact.linkedin }}">LinkedIn</a> | <a href="{{ resume.contact.github }}">Github</a> | <a href="{{ resume.contact.website }}">Portfolio</a></p>
+    <p>Email: {{ resume.contact.email }} | Phone: {{ resume.contact.phone_number }} | Address: {{ resume.contact.address.street }}, {{ resume.contact.address.city }}, {{ resume.contact.address.state }} - {{ resume.contact.address.zip }}</p>
+    <hr>
+  </div>
+
+  {% for _, html in sections %}
+  <div class="section">
+    {{ html | safe }}
+  </div>
+  {% endfor %}
+
+</body>
+</html>
