@@ -14,7 +14,7 @@
     <h1>{{ resume.contact.name }}</h1>
     <p class="bold">{{ resume.position }}</p>
     <p><a href="{{ resume.contact.linkedin }}">LinkedIn</a> | <a href="{{ resume.contact.github }}">Github</a> | <a href="{{ resume.contact.website }}">Portfolio</a></p>
-    <p>Email: {{ resume.contact.email }} | Phone: {{ resume.contact.phone_number }} | Address: {{ resume.contact.address.street }}, {{ resume.contact.address.city }}, {{ resume.contact.address.state }} - {{ resume.contact.address.zip }}</p>
+    <p>Email: <a href="mailto:{{ resume.contact.email }}"> {{ resume.contact.email }} </a> | Phone: {{ resume.contact.phone_number }} | Address: {{ resume.contact.address.street }}, {{ resume.contact.address.city }}, {{ resume.contact.address.state }} - {{ resume.contact.address.zip }}</p>
     <hr>
   </div>
 
