@@ -1,1 +1,36 @@
 # add your job description here
+Job Title: Senior Machine Learning Engineer
+
+Experience Level: 10+ Years
+Client: Federal Project
+Eligibility: Must have at least 2 years of stay in the U.S.
+________________________________________
+Technology Stack:
+•	AWS SageMaker Studio, Python, PyTorch, OCR,TensorFlow, TF-IDF, OpenCV
+•	Good to have: AutoGluon and Microsoft DiT (Document Image Transformer)
+________________________________________
+Key Responsibilities:
+•	Maintain, optimize, and enhance existing document and image processing systems for code prediction.
+•	Collaborate with cross-functional teams to gather business requirements and translate them into ML solutions.
+•	Monitor system performance and proactively troubleshoot document/image model issues.
+•	Design and conduct machine learning experiments specific to document and image analysis, interpret results, and fine-tune models for performance.
+•	Apply advanced ML techniques to improve document image classification, layout analysis, and document structure understanding.
+•	Integrate transformer-based models with OCR pipelines to improve text extraction from images.
+•	Use AWS SageMaker Studio for training, deploying, and monitoring document/image processing models.
+•	Implement AutoML techniques (e.g., AutoGluon, AWS AutoML) to automate model selection and optimization in document/image use cases.
+•	Apply TF-IDF and other text feature extraction methods to support NLP-driven document classification.
+•	Stay current with the latest advancements in document and image processing within the ML/AI space and integrate applicable improvements.
+________________________________________
+Required Qualifications:
+•	Bachelor’s or Master’s degree in Computer Science, Machine Learning, or a related field.
+•	10+ years of experience in machine learning with a strong focus on document and image processing.
+•	Proven experience building and optimizing ML systems in document processing, OCR, and image understanding.
+•	Proficiency in Python and ML libraries like TensorFlow and PyTorch.
+•	Hands-on experience with Microsoft DiT or similar transformer models tailored to document image understanding.
+•	Deep understanding of self-supervised learning approaches applied to document and image pre-training.
+•	Proficient in OpenCV for image preprocessing tasks such as resizing, feature extraction, and noise reduction.
+•	Practical experience with AWS SageMaker ecosystem and AutoML tools such as SageMaker Autopilot.
+•	Familiarity with AutoGluon for streamlining model optimization and pipeline automation in image/text use cases.
+•	Experience applying NLP techniques like TF-IDF to text extracted from document images.
+•	Strong grasp of cloud platforms (AWS, Azure) and containerization tools like Docker.
+•	Excellent analytical, communication, and cross-functional collaboration skills.

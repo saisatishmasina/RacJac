@@ -3,7 +3,15 @@ import os
 from Scripts.Extract import yamlparse
 from Scripts.Organizer.models import Resume, Education, Project, Experience, Certification, Skills
 from Scripts.Doc.doc_developer import render_resume_to_file
+from Scripts.Extract.key_extract import extract_keywords
 
+import openai
+
+# Groq API key and endpoint
+openai.api_key = "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"
+openai.api_base = "https://api.groq.com/openai/v1"
+
+### ---- USER DATA EXTRACTION AND ORGANIZATION ---- ###
 # filepath
 filepath = os.path.join(os.getcwd(), "Data", "dexmax.yaml")
 
@@ -27,7 +35,16 @@ certification_order = data["Certification"]["order"]
 
 resume = Resume(contact, education, experience, skills, project, certification, education_order, experience_order, skills_order, project_order, certification_order)
 
-render_resume_to_file(resume)
+
+### ---- KEYWORD EXTRACTION ---- ###
+# Load the job description from a file
+with open("./Data/JD.txt", "r") as file:
+    job_description = file.read()
+
+keywords = extract_keywords(job_description)
+print("Extracted Keywords:", keywords)
+
+# render_resume_to_file(resume)
 
 
 
