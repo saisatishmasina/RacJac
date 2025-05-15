@@ -4,12 +4,12 @@ from Scripts.Extract import yamlparse
 from Scripts.Organizer.models import Resume, Education, Project, Experience, Certification, Skills
 from Scripts.Doc.doc_developer import render_resume_to_file
 from Scripts.Extract.key_extract import extract_keywords
+from Scripts.Gen.generator import enhance_resume
+from dotenv import load_dotenv
 
 import openai
+import spacy
 
-# Groq API key and endpoint
-openai.api_key = "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"
-openai.api_base = "https://api.groq.com/openai/v1"
 
 ### ---- USER DATA EXTRACTION AND ORGANIZATION ---- ###
 # filepath
@@ -41,9 +41,23 @@ resume = Resume(contact, education, experience, skills, project, certification, 
 with open("./Data/JD.txt", "r") as file:
     job_description = file.read()
 
-keywords = extract_keywords(job_description)
-print("Extracted Keywords:", keywords)
 
+### ---- ENHANCE RESUME ---- ###
+# Load .env file
+load_dotenv()
+
+client = openai.OpenAI(
+    api_key=os.getenv("GROQ_API_KEY"),
+    base_url=os.getenv("GROQ_API_BASE")  # Only if using Groq or custom LLM
+)
+
+nlp = spacy.load("en_core_web_sm")
+
+
+# Enhance the resume
+enhanced_resume = enhance_resume(resume, job_description, client, nlp)
+
+enhanced_resume.display()
 # render_resume_to_file(resume)
 
 

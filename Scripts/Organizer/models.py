@@ -15,9 +15,13 @@ class Resume:
         self.skills_order = skills_order
         self.project_order = project_order
         self.certification_order = certification_order
-    
+        
+        #generated variables
+        self.professional_summary = ""
+
     def display(self):
         print("-"*40 + "Resume" + "-"*40)
+        print(f"Professional Summary:\n{self.professional_summary}")
         self.display_contact()
         for _, display_func in self.display_order_by_section():
             display_func()
