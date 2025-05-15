@@ -76,3 +76,9 @@ Skills:
         - HTML
         - CSS
         - JavaScript
+
+Questions:
+  - question: Do you wanna add some projects related to Job Description?, please answer in yes or no
+    answer: yes
+  - question: Do you fabricate some of your experience as well?, please answer in yes or no
+    answer: no

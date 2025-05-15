@@ -1,10 +1,7 @@
-So, what do you wanna generate?
-Summary, take context and jd and make a new one
-Projects, generate new ones and modify old ones with keywords --new is optional
-Experience - summary, generate new text by taking context and keywords.
-Certification (Optional) - can add new ones as in progress.
 
-Modify
-Skills, instead of gen, add new keyword ones into appropriate category
+1. Extract all skills from jd and resume and categorize and display
 
+2. write 1-2 projects related to job description
+
+3. rephrase whole summary using keywords and skills from job description 
 
