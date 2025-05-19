@@ -1,40 +1,37 @@
 import re
 import ast
 from typing import List
-from Scripts.Organizer import Skills
+from Scripts.Organizer.models import Skills
 
 
 def categorize_skills_via_llm(client, skills):
     """
-    Sends the list of skills to the LLM for categorization and returns a list of categorized Skills objects.
+    Sends a list of skills to the LLM for smart categorization (up to 6 title-cased categories),
+    and returns a list of Skills(category, skill) objects.
     """
     skill_str = ", ".join(skills)
 
-    system_prompt = "You are a professional resume assistant that categorizes skills into standard resume categories."
+    system_prompt = (
+        "You are a resume assistant that intelligently categorizes technical and soft skills "
+        "into fewer than 7 distinct, logical categories. "
+        "Each category should be clear, meaningful, and in Title Case (e.g., 'Programming Languages')."
+    )
+
     user_prompt = f"""
-Given the following skills:
+Given the following list of skills:
 
 {skill_str}
 
-Categorize them into one of the following categories:
-- programming_languages
-- machine_learning
-- cloud
-- databases
-- tools
-- etl
-- soft_skills
-- other
+Categorize them into fewer than 7 meaningful groups with clear category names.
+Each category name should be in Title Case (e.g., 'Cloud Platforms', 'Databases', etc.).
 
-Respond with valid Python code that instantiates a list of Skills(category, skill) objects.
-Each category should have one Skills object, and the skills inside should be a list of strings.
-
-Use this format:
+Respond in valid Python code using this format:
 [
-    Skills(category='programming_languages', skill=['Python', 'C++']),
-    Skills(category='cloud', skill=['AWS', 'GCP']),
+    Skills(category='Programming Languages', skill=['Python', 'C++']),
+    Skills(category='Cloud Platforms', skill=['AWS', 'GCP']),
     ...
 ]
+Do not include any extra explanation or text, just the Python list.
 """
 
     response = client.chat.completions.create(
@@ -44,7 +41,7 @@ Use this format:
             {"role": "user", "content": user_prompt}
         ],
         temperature=0.3,
-        max_tokens=300
+        max_tokens=400
     )
 
     code_output = response.choices[0].message.content.strip()
@@ -58,7 +55,7 @@ Use this format:
 
     raw_list_code = match.group(1)
 
-    # Replace Skills(...) with dictionary-like format
+    # Convert Skills(...) syntax to dict-like syntax for safe eval
     safe_code = (
         raw_list_code
         .replace("Skills(", "{")
@@ -68,11 +65,9 @@ Use this format:
     )
 
     try:
-        # Parse to list of dicts
         parsed = ast.literal_eval(safe_code)
         return [Skills(category=item['category'], skill=item['skill']) for item in parsed]
     except Exception as e:
         print("❌ Failed to parse skills:", e)
         print("🔎 Raw Safe Code:", safe_code)
         return []
-

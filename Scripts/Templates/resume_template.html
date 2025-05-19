@@ -17,6 +17,11 @@
     <p>Email: <a href="mailto:{{ resume.contact.email }}"> {{ resume.contact.email }} </a> | Phone: {{ resume.contact.phone_number }} | Address: {{ resume.contact.address.street }}, {{ resume.contact.address.city }}, {{ resume.contact.address.state }} - {{ resume.contact.address.zip }}</p>
     <hr>
   </div>
+  <div class="summary">
+    <h2>SUMMARY</h2>
+    <hr>
+    <p>{{ resume.professional_summary }}</p>
+  </div>
 
   {% for _, html in sections %}
   <div class="section">
