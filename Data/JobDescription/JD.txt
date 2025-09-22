@@ -1,0 +1,39 @@
+📌 Master Job Description (Keyword-Rich)
+
+Job Title: Software Engineer / DevOps Engineer / Cloud Automation Specialist
+
+Overview:
+We are seeking a skilled Software Engineer / DevOps Engineer with strong experience in backend development, cloud infrastructure (AWS, Docker, Kubernetes, Terraform), CI/CD pipelines, and workflow automation. The ideal candidate will also have hands-on expertise with Atlassian tools (Jira, Confluence, ScriptRunner) and be able to design scalable, automated solutions that improve reliability, performance, and service delivery.
+
+Responsibilities:
+	•	Design, develop, and deploy backend applications using Python, Java, C#, and SQL.
+	•	Build and maintain cloud-native infrastructure on AWS (EC2, S3, Lambda, CloudWatch, IAM) with Terraform (Infrastructure as Code).
+	•	Implement and manage CI/CD pipelines (Jenkins, GitHub Actions, GitLab CI).
+	•	Containerize and orchestrate applications using Docker and Kubernetes.
+	•	Develop REST APIs and integrate with third-party systems for enterprise workflows.
+	•	Automate monitoring, logging, and alerting for SLA compliance and incident response.
+	•	Manage and administer Atlassian Jira/Confluence, including workflows, permissions, automation rules, ScriptRunner (Groovy scripting), and service management.
+	•	Build data pipelines and ETL processes with MySQL, PostgreSQL, MongoDB to support analytics and reporting.
+	•	Apply Agile (Scrum/Kanban) methodologies for iterative development and sprint planning.
+	•	Collaborate with cross-functional teams to design scalable, secure, and high-performance systems.
+	•	Implement security best practices across cloud infrastructure, workflows, and applications.
+	•	Provide mentorship, training, and knowledge-sharing sessions for junior developers and engineers.
+	•	Improve system reliability (uptime, error reduction)
+	•	Drive efficiency (hours saved, faster deployments)
+	•	Enable cost savings (infra optimization, cloud spend reduction)
+	•	Handle scalability (large data pipelines, user load)
+	•	Increase adoption (knowledge base, API integrations)
+
+Required Skills & Keywords (for ATS):
+	•	Programming: Python, Java, C#, Groovy, SQL, APIs
+	•	Cloud/DevOps: AWS (EC2, S3, Lambda, IAM, CloudWatch), Terraform, Docker, Kubernetes, CI/CD (Jenkins, GitHub Actions), Load Balancing, Scalability, Serverless Architecture
+	•	Databases: MySQL, PostgreSQL, MongoDB, Data Warehousing, ETL Pipelines
+	•	Atlassian Tools: Jira Administration, Jira Service Management, Confluence, ScriptRunner, Workflow Automation, SLA Monitoring
+	•	Methodologies: Agile, Scrum, Kanban, ITSM, Security & Compliance, Infrastructure as Code
+	•	Other: Automation, System Design, Troubleshooting, Monitoring, Leadership, Documentation
+
+Preferred Certifications:
+	•	AWS Certified Cloud Practitioner (or AWS Solutions Architect / AWS DevOps Engineer)
+	•	Terraform Associate
+	•	Atlassian Certified Jira Administrator
+	•	Docker/Kubernetes Certification (CKA)

@@ -21,7 +21,7 @@ def enhance_resume(resume_obj: Resume, job_description: str, client) -> Resume:
     # Enhance Projects
     for proj in resume_obj.projects:
         context = " ".join(proj.summary)
-        new_points = generate_resume_summary_points(job_description, context, client)
+        new_points = generate_resume_summary_points(job_description, context, client, context_type="project")
         for point in new_points:
             if point and not is_similar_point(point, proj.summary) and len(point.split()) > 3:
                 proj.summary.append(point)

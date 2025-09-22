@@ -11,10 +11,11 @@ import openai
 
 ### ---- USER DATA EXTRACTION AND ORGANIZATION ---- ###
 # filepath
-filepath = os.path.join(os.getcwd(), "Data", "dexmax.yaml")
+filepath = os.getcwd()
+user_data = os.path.join(filepath, "Data", "user_data.yaml")
 
 # data extraction
-data = yamlparse.parse_yaml(filepath)
+data = yamlparse.parse_yaml(user_data)
 
 # data organization
 education = [Education(**school) for school in data["Education"]["schools"]]
@@ -23,6 +24,8 @@ experience = [Experience(**job) for job in data["Experience"]["jobs"]]
 certification = [Certification(**cert) for cert in data["Certification"]["certs"]]
 skills = [Skills(**skill) for skill in data["Skills"]["categories"]]
 contact = data["Contact"]
+role = data["Position"]
+company = data["Company"]
 
 # order
 education_order = data["Education"]["order"]
@@ -36,7 +39,7 @@ resume = Resume(contact, education, experience, skills, project, certification, 
 
 ### ---- KEYWORD EXTRACTION ---- ###
 # Load the job description from a file
-with open("./Data/JD.txt", "r") as file:
+with open(os.path.join(filepath , "Data", "JobDescription" , "JD.txt"), "r") as file:
     job_description = file.read()
 
 
@@ -53,7 +56,7 @@ client = openai.OpenAI(
 # Enhance the resume
 enhanced_resume = enhance_resume(resume, job_description, client)
 
-render_resume_to_file(enhanced_resume)
+render_resume_to_file(enhanced_resume, role, company)
 
 
 
